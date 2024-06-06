@@ -5,15 +5,13 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header img-fluid">
-          <a href="#" className="btn btn-primary shadow">
-            Hello
-          </a>
-        </header>
+        <header className="App-header img-fluid">Dictionary</header>
         <main>
           <Dictionary />
         </main>
-        <footer className="text-center">Coded by Gabriela Saftoiu</footer>
+        <footer className="text-center">
+          Coded by <em>Gabriela Saftoiu </em>
+        </footer>
       </div>
     </div>
   );
