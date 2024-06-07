@@ -9,8 +9,10 @@ export default function App() {
         <main>
           <Dictionary />
         </main>
+        <br />
         <footer className="text-center">
-          Coded by <em>Gabriela Saftoiu </em>
+          This project was coded by <em>Gabriela Saftoiu</em> and is
+          open-sourced
         </footer>
       </div>
     </div>
