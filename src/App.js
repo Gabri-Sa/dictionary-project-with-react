@@ -5,7 +5,8 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header img-fluid">Dictionary</header>
+        <header className="App-header img-fluid">Explanatory Dictionary</header>
+        <br />
         <main>
           <Dictionary />
         </main>
