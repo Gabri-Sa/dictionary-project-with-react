@@ -1,9 +1,13 @@
-.App-header {
-  margin: 30px 0;
+.App header {
+  color: rgb(33, 33, 33);
+  margin: 24px 0 15px 0;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 29px;
 }
 
-.App-footer {
+.App footer {
   text-align: center;
   margin: 30px 0;
-  size: 10px;
+  font-size: 12px;
 }
