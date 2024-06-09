@@ -12,9 +12,13 @@
   margin: 20px 0;
 }
 
+.Dictionary form {
+  display: flex;
+  justify-content: space-between;
+}
 .Dictionary input {
   color: #333;
-  width: 100%;
+  width: 350%;
   padding: 6px 4px;
   border-radius: 6px;
   border: 1px solid #ddd;
