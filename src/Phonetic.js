@@ -5,8 +5,8 @@ export default function Phonetic(props) {
   return (
     <div className="Phonetic">
       <a
-        href={props.results.phonetic
-          .filter((phonetic) => phonetic.audio != "")
+        href={props.results.phonetics
+          .filter((phonetic) => phonetic.audio !== "")
           .map(function (phonetic, index) {
             return (
               <div key={index}>
