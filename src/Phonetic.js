@@ -2,21 +2,10 @@ import React from "react";
 import "./Phonetic.css";
 
 export default function Phonetic(props) {
+  console.log(props);
   return (
     <div className="Phonetic">
-      <a
-        href={props.results.phonetics
-          .filter((phonetic) => phonetic.audio !== "")
-          .map(function (phonetic, index) {
-            return (
-              <div key={index}>
-                <Phonetic phonetic={phonetic} />
-              </div>
-            );
-          })}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href={props.phonetic.audio} target="_blank" rel="noopener noreferrer">
         Listen:
       </a>
 
