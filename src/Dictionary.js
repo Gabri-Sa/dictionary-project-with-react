@@ -20,8 +20,8 @@ export default function Dictionary() {
 
   function search() {
     // documentation:https://dictionaryapi.dev
-
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    let apiKey = `a4cf7a5b0a77537beftcb4bo13d400ab`;
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
 
     let pexelsApiKey =
