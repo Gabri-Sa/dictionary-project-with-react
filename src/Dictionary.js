@@ -11,7 +11,7 @@ export default function Dictionary() {
   let [photos, setPhotos] = useState(null);
 
   function handleDictionaryResponse(response) {
-    setResults(response.data[0]);
+    setResults(response.data);
   }
 
   function handlePexelsResponse(response) {
