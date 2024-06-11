@@ -5,7 +5,7 @@ import Photos from "./Photos";
 import "./Dictionary.css";
 
 export default function Dictionary() {
-  let [keyword, setKeyword] = useState("brilliant");
+  let [word, setWord] = useState("brilliant");
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
@@ -21,12 +21,12 @@ export default function Dictionary() {
   function search() {
     // documentation:https://dictionaryapi.dev
     let apiKey = `a4cf7a5b0a77537beftcb4bo13d400ab`;
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${apiKey}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
 
     let pexelsApiKey =
       "bgKpPq39LCUXKpLoyX4JZAc3PjRDYhGpVxMMJxVO9H6dCc8UUFwTZXd5";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=9`;
     let headers = { Authorization: `${pexelsApiKey}` };
 
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
@@ -37,8 +37,8 @@ export default function Dictionary() {
     search();
   }
 
-  function handleKeywordChange(event) {
-    setKeyword(event.target.value);
+  function handleWordChange(event) {
+    setWord(event.target.value);
   }
 
   function load() {
@@ -53,7 +53,7 @@ export default function Dictionary() {
           <form onSubmit={handleSubmit}>
             <input
               type="search"
-              onChange={handleKeywordChange}
+              onChange={handleWordChange}
               placeholder="Search for a word..."
             />
             <input
